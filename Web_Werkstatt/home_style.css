@@ -1,0 +1,119 @@
+body {
+    background-color: lightgreen;
+}
+
+.header {
+    background-color: yellow;
+    color: navy;
+    text-align: center;
+    font-family: Comic Sans MS;
+}  
+
+.header head1 {
+    font-size: 30px;
+}
+
+h3 {
+    color: gray;
+    font-family: Georgia;
+}
+
+p {
+    font-family: Helvetica;
+    margin-left: 20px;
+}
+
+
+
+/* content-layout */
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+.column {
+    position: relative;
+    float: left;
+    width: 33%;
+    padding: 3px;
+}
+/*
+.column.small {
+    width: 25%;
+    padding: 3px;
+}
+
+.column.big {
+    width: 50%;
+    padding: 3px;
+}
+*/
+@media screen and (max-width:1000px) {
+    .column { width: 100%; }
+    .tail { position: relative; }
+}
+
+
+/* other classes */
+
+.txt_statemnt {
+    font-family: "Courier New";
+    font-weight: bold;
+    text-align: center;
+    font-size: 12pt;
+    padding: 5px;
+}
+
+table, td, th {
+    border: 1px solid black;
+    text-align: center;
+    font-family: "Comic Sans MS";
+    width: relative;
+}
+
+table {
+    border-collapse: collapse;
+    /*width: 100%; streckt Tabelle
+    stets an Fensterränder breit */
+}
+
+th, td {
+    padding: 10px;  
+}
+
+.box_news {
+    background-color: lightgray;
+    /*width: 400px;*/
+    width: relative;
+    border: 3px solid yellow;
+    padding: 10px;
+    margin: 20px;
+    float: right;
+}
+
+.box_statemnt {
+    background-color: yellow;
+    width: 400px;
+    border: 1px solid yellow;
+    padding: 3px;
+    margin: 10px;
+    float: left;
+}
+
+.box_alert {
+    background-color: lightblue;
+    width: 300px;
+    border: 1px solid red;
+    padding: 3px;
+    margin: 10px;
+}
+
+.tail {
+    background-color: lightblue;
+    width: 100%;
+    padding: 10px;
+    bottom: 0;
+    position: fixed;
+}

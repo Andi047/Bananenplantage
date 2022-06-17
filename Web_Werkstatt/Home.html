@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    
+        <title> Bobby's Bananenfarm </title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="home_style.css">
+        <link rel="stylesheet" type="text/css" href="ribbon_style.css">
+        <link rel="stylesheet" type="text/css" href="pictures_style.css">
+        <link rel="stylesheet" type="text/css" href="login_style.css">
+        
+    </head>
+    
+    <body>
+        
+        <div class="header">
+            <head1>Bananen-Bobby's:</head1>
+            <p>Goldener Genuss - direkt aus ihrer Nachbarschaft</p>
+        </div>
+        
+        
+        <!-- Top-Menüband -->
+        
+        <ul>
+            <li> <a href="Home.html" class="active-home">Home</a> </li>
+            <li class="dropdown"> <a href="#1" class="dropbtn">Unser Hof</a>
+                <div class="dropdown-content">
+                    <a href="#1">Bauernhof</a>
+                    <a href="#2">Hofladen</a>
+                    <a href="#3">Die Pension</a>
+                </div>
+            </li>
+            <li class="dropdown"> <a href="#2" class="dropbtn">Alles Banane !?</a>
+                <div class="dropdown-content">
+                    <a href="x">Arten von Bananen</a>
+                    <a href="https://de.wikipedia.org/wiki/Bananen">Mehr über die Banane</a>
+                    <a href="z">Qualitätsklassen</a>
+                </div>
+            </li>
+            <li> <a href="Order.html">Unser Angebot</a></li>
+            
+            <li style="float:right"> <a href="Kontakt.html">Kontakt</a> </li>
+            <li class="dropdown" style="float:right;cursor:pointer">
+                <a onclick="document.getElementById('id01').style.display='block'" class="dropbtn">LOGIN</a>
+                <div class="dropdown-content">
+                    <a href="Register.html" target="_blank">Registrieren...</a>
+                </div>
+            </li>
+        </ul>
+        
+        
+        <!-- Login-Formular -->
+        
+        <div id="id01" class="modal">
+            
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="txtcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Login abbrechen">&times;</span>
+                        <h2 class="login"> Nur noch ein paar Klicks entfernt ... </h2>
+                </div>
+                
+                <div class="container">
+                    <label for="uname"><b>Benutzername</b></label>
+                    <input type="text" placeholder="Name" name="uname" required>
+                    
+                    <label for="psw"><b>Passwort</b></label>
+                    <input type="password" placeholder="Passwort" name="psw" required>
+                    
+                    <button type="submit">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Meinen Namen künftig merken
+                    </label>
+                </div>
+                
+                <div class="container" style="background-color:lightgreen">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Abbrechen</button>
+                    <span class="psw"><a href="#">Passwort vergessen ?</a></span>
+                </div>
+            </form>
+        </div>
+        
+        
+        <!-- Tabelle -->
+        
+        <div class="column">
+            <h3> So schneiden wir im Vergleich zur Konkurrenz ab: </h3>
+            
+            <table>
+                <tr>
+                    <th> Supermarkt </th>
+                    <th> Dorfladen </th>
+                    <th> Bobby's </th>
+                </tr>
+                <tr>
+                    <td> Massenware </td>
+                    <td> unterm Durchschnitt </td>
+                    <td> erstklassig </td>
+                </tr>
+                <tr>
+                    <td> anonym </td>
+                    <td> persönlich </td>
+                    <td> persönlich </td>
+                </tr>
+                <tr>
+                    <td> ab und an nicht verfügbar </td>
+                    <td> begrenzt verfügbar </td>
+                    <td> stets auf Lager </td>
+                </tr>
+            </table>
+        </div>
+        
+        
+        <!-- Bilder-Galerie -->
+        
+        <div class="column">
+        
+            <div class="slideshow-container">
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="Bilder/Regal.jpg" style="width:100%">
+                    <div class="text">Bananen in unserem Laden</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="Bilder/BananInnen.jpg" style="width:100%">
+                    <div class="text">Innenleben unserer Besten</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="Bilder/Staude.jpg" style="width:100%">
+                    <div class="text">Eine unserer Stauden</div>
+                </div>
+                
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        
+        </div>
+        
+        
+        <!-- Anmerkung -->
+                
+        <div class="column">
+            <p> Sowohl der übliche Supermarkt als auch der Dorfladen haben ihre Probleme.
+            Wir von Bobby's kombinieren persönliche Nähe und Top-Qualität. Und das auch immer "auf Lager".</p>
+        
+        
+            <!--
+                    <div class="box_statemnt">
+                        <div class="txt_statemnt">
+                        Bananen sind schon seit 200 Jahren<br>
+                        Teil unserer Familie. Wir kennen alle<br>
+                        Sorten, lieben den süßen Duft und<br>
+                        kompromisslose Frische.<br>
+                        <br>
+                        Dafür stehen wir mit unserem Namen.
+                        </div>
+                    </div>
+            -->
+        
+        
+            <!-- Newsletter-Signup -->
+        
+            <div class="box_news">
+                <p> Hier können Sie sich für unseren monatlichen<br>Newsletter mit Ihrer E-Mail anmelden: </p>
+                <form>
+                    <input type="email" name="news_sub"> <input type="submit" value="Newsletter abonnieren">
+                </form>
+            </div>
+        </div>
+        
+        
+        <div class="tail">
+            <p><b>Bobster Bananen-Plantagen GmbH</b></p>
+            <p>&copy; 2020 - Alle Rechte vorbehalten. </p>
+            <p> Haben Sie etwas zu beanstanden? Geben Sie uns Feedback per Mail an: <a href="mailto:bobby@feedback.de">bobby@feedback.de</a> </p>
+        </div>
+        
+        
+        <!-- JavaScript-Link -->
+        
+        <script src="pictures.js"></script>
+    
+    </body>
+</html>

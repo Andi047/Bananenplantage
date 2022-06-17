@@ -1,0 +1,95 @@
+/* general styling */
+
+.header {
+    background-color: yellow;
+    color: navy;
+    text-align: center;
+    font-family: Comic Sans MS;
+}  
+
+.header head1 {
+    font-size: 30px;
+}
+
+footer {
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+/* register form */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgreen;
+}
+
+#regForm {
+    background-color: yellow;
+    margin: 100px auto;
+    font-family: Helvetica;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Helvetica;
+    border: 1px solid #aaaaaa;
+}
+
+input.invalid {
+    background-color: #ffdddd;
+}
+
+.tab {
+    display: none; /* hides steps by default */
+}
+
+button {
+    background-color: navy;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Arial;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#prevBtn {
+    background-color: green;
+}
+
+/* Circles for step indication */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+.step.finish {
+    background-color: #4CAF50;
+}

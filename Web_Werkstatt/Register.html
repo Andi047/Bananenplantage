@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Registrieren... </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="register_style.css">
+    </head>
+        
+    <body>
+    
+        <div class="header">
+            <head1>Bananen-Bobby's:</head1>
+            <p>Goldener Genuss - direkt aus ihrer Nachbarschaft</p>
+        </div>
+        
+        
+        <!-- register form -->
+    
+        <form id="regForm" action="/action_page.php">
+            <h1>Zum Registrieren bitte ausfüllen:</h1>
+            
+            <div class="tab">Name:
+                <p><input placeholder="Vorname" oninput="this.className = ''" name="fname"></p>
+                <p><input placeholder="Nachname" oninput="this.className = ''" name="lname"></p>
+            </div>
+            
+            <div class="tab">Kontakt-Möglichkeiten:
+                <p><input placeholder="E-Mailadresse" oninput="this.className = ''" name="email"></p>
+                <p><input placeholder="Festnetz-Nummer" oninput="this.className = ''" name="phone"></p>
+            </div>
+            
+            <div class="tab">Login-Daten:
+                <p><input placeholder="Benutzername" oninput="this.className = ''" name="uname"></p>
+                <p><input placeholder="Passwort" oninput="this.className = ''" name="pword" type="password"></p>
+            </div>
+            
+            <div style="overflow:auto;">
+                <div style="float:right;">
+                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Zurück</button>
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Weiter</button>
+                </div>
+            </div>
+            
+            <!-- circles indicating steps of form -->
+            <div style="text-align:center;margin-top:40px;">
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+            </div>
+        </form>
+        
+        <footer>
+            <hr>
+            <p><b>Bobster Bananen-Plantagen GmbH</b></p>
+            <p>&copy; 2020 - Alle Rechte vorbehalten. </p>
+            <p> Haben Sie etwas zu beanstanden? Geben Sie uns Feedback per Mail an: <a href="mailto:bobby@feedback.de">bobby@feedback.de</a> </p>
+        </footer>
+        
+        <script src="regist_script.js"></script>
+        
+    </body>
+</html>

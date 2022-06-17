@@ -1,0 +1,39 @@
+body {
+    background-color: lightgreen;
+}
+
+.header {
+    background-color: yellow;
+    color: navy;
+    text-align: center;
+    font-family: Comic Sans MS;
+}
+
+.header head1 {
+    font-size: 30px;
+}
+
+h2 {
+    color: navy;
+    text-align: center;
+    font-family: Verdana;
+}
+
+h1 {
+    color: purple;
+    text-align: center;
+    font-family: Purisa;
+    background-color: yellow;
+}
+
+table, th, td {
+    background-color: green;
+    border: 1px solid red;
+    border-collapse: collapse;
+    padding: 7px;
+    border-spacing: 5px;
+    position: relative;
+    color: yellow;
+    font-family: Verdana;
+}
+    

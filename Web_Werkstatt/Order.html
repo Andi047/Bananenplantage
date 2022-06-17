@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Angebot </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="order_style.css">
+        <link rel="stylesheet" type="text/css" href="offer_style.css">
+        <link rel="stylesheet" type="text/css" href="ribbon_style.css">
+        
+    </head>
+    
+    <body>
+    
+        <div class="header">
+            <head1>Bananen-Bobby's:</head1>
+            <p>Goldener Genuss - direkt aus ihrer Nachbarschaft</p>
+        </div>
+        
+        
+        <!-- Top Menüband -->
+        
+        <ul>
+            <li> <a href="Home.html" class="active-home">Home</a> </li>
+            <li class="dropdown"> <a href="#1" class="dropbtn">Unser Hof</a>
+                <div class="dropdown-content">
+                    <a href="#1">Bauernhof</a>
+                    <a href="#2">Hofladen</a>
+                    <a href="#3">Die Pension</a>
+                </div>
+            </li>
+            <li class="dropdown"> <a href="#2" class="dropbtn">Alles Banane !?</a>
+                <div class="dropdown-content">
+                    <a href="x">Arten von Bananen</a>
+                    <a href="https://de.wikipedia.org/wiki/Bananen">Mehr über die Banane</a>
+                    <a href="z">Qualitätsklassen</a>
+                </div>
+            </li>
+            <li style="float:right"><a href="Kontakt.html">Kontakt</a></li>
+        </ul>
+        
+        
+        <!-- Bildergalerie -->
+        
+            <div class="container">
+            
+                <div class="fruitSlides">
+                    <img src="Bilder/BananeGelb1.jpg" style="width:100%">
+                </div>
+                <div class="fruitSlides">
+                    <img src="Bilder/BananeRot1.jpg" style="width:100%">
+                </div>
+                <div class="fruitSlides">
+                    <img src="Bilder/Banane3.jpg" style="width:100%">
+                </div>
+                
+                <!--
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                -->
+                
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+                
+                
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="Bilder/BananeGelb1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Goldbrandt">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Bilder/BananeRot1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Roter Sultan">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Bilder/Banane3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Dalmatiners Traum">
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <!-- Bestell-Formular -->
+        
+            <div class="container">
+            
+                <h1>Geben Sie hier Ihre Bestellung auf:</h1>
+            
+                <table>
+                    <caption> Unser Angebot: </caption>
+                    <tr>
+                        <th> Balu's Kinderportion </th>
+                        <th> Kleines Affen-Brot </th>
+                        <th> Großes Affen-Brot </th>
+                    </tr>
+                    <tr>
+                        <td> 2x Bären-Bananen </td>
+                        <td> 4x Dalmatiners Traum </td>
+                        <td> 4x Roter Sultan </td>
+                    </tr>
+                    <tr>
+                        <td> 2x Dalmatiners Traum </td>
+                        <td> 3x Roter Sultan </td>
+                        <td> 4x Goldbrandt </td>
+                    <tr>
+                        <td> mit Kinder-Tüte </td>
+                        <td> mit Schimpansen-Tüte </td>
+                        <td> mit Gorilla-Tüte </td>
+                    </tr>
+                </table>
+                
+                <br>
+                
+                <form action="/bestellung_1.php" method="post">
+                    <select> name="Angebot"
+                        <option value="stdrd" selected>Balu's Kinderportion</option>
+                        <option value="small">Kleines Affen-Brot</option>
+                        <option value="big">Großes Affen-Brot</option>
+                    </select>
+                    <br><br>
+                    <input type="submit" value="Auswahl bestellen...">
+                </form>
+            
+            </div>
+            
+        </div>
+        
+        <!--
+        <h2> Berechnung der Bestell-Kosten: </h2>
+        <p> Nachfolgend können Sie die Kosten für Ihre Bestellung berechnen (Die Mindestbestellmenge beträgt 8 Bananen). </p>
+        
+        <form action="banana_order.php" oninput="x.value=parseInt(a.value)+parseInt(b.Value)">
+            8
+            <input type="range" id="a" name="a" value="50">
+            50 +
+            <input type="number" id="b" name="b" value="8">
+            =
+            <output name="x" for="a b"></output>
+            <br><br>
+            <input type="submit" value="Diese Menge berechnen">
+        </form>
+        -->
+        
+        <script src="offer_script.js"></script>
+        
+    </body>
+</html>
